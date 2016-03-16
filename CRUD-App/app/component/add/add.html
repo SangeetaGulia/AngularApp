@@ -1,0 +1,34 @@
+<div ng-controller="addController">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div style="background-color: darksalmon" align="center">
+                    <BR/> ---------------------------------------------<BR/>
+                    <h4 align="center" ><B> Add Record of user</B></h4>
+                    ---------------------------------------------<BR/>
+                </div>
+                <div style="background-color: bisque;margin-top:15px;margin-bottom:15px;padding-left:15px;padding-top:15px;">
+            <table>
+                <tr><td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" class="form-control" ng-model="emp_name"><br></td>
+                </tr>
+                <tr><td><label for="email">Email Id</label></td><td><input type="email" class="form-control" id="email" ng-model="emp_email"><br>
+                </td></tr>
+
+                <tr><td><label for="dob">Date Of Birth </label></td>
+                    <td><input type="date" id="dob" class="form-control" ng-model="emp_dob"><br></td></tr>
+
+                <tr><td><label for="company">Company Name</label></td>
+                    <td><input type="text" id="company" class="form-control" ng-model="emp_companyname"><br>
+                    </td></tr>
+
+                <tr><td><label for="id">ID</label></td>
+                    <td><input type="number" id="id" class="form-control" ng-model="emp_id"><br>
+                    </td></tr>
+            </table>
+            <button class="btn btn-primary" ng-click="addEmployee()">Add Employee</button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>

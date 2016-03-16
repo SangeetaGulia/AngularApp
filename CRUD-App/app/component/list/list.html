@@ -1,0 +1,37 @@
+<div ng-controller="listController">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div style="background-color: darksalmon" align="center">
+                <BR/> ---------------------------------------------<BR/>
+            <h4 align="center" ><B> Displaying Record of user</B></h4>
+                 ---------------------------------------------<BR/>
+                </div>
+
+                <div style="background-color: bisque;margin-top:15px;margin-bottom:15px;padding-left:15px;padding-top:15px;">
+                  <table class="table" >
+                    <thead>
+                        <tr>
+                                <td><B>NAME</B></td><td><B>EMAIL</B></td><td><B>DATE OF BIRTH</B></td><td><B>COMPANY NAME</B></td><td><B>ID</B></td>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="employee in emp">
+                            <td>{{employee.name}}</td>
+                            <td>{{employee.email}}</td>
+                             <td>{{employee.dob}}</td>
+                            <td>{{employee.companyName}}</td>
+                            <td>{{employee.id}}</td>
+
+                         </tr>
+                     </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+      </div>
+
+</div>
